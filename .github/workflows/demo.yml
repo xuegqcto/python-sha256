@@ -9,5 +9,8 @@ jobs:
         uses: actions/checkout@v4
       - name: install pyinstaller
         run: pip install pyinstaller
+      - name: build exe
+        run: pyinstaller sha256.py -F
+
 
 
